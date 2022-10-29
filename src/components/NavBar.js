@@ -16,7 +16,6 @@ const Navbar = () => {
                         <li><Link to={"/dunk"}>Dunk</Link></li>
                         <li><Link to={"/airforce"}>Air Force</Link></li>
                         <li><Link to={"/jordan"}>Jordan</Link></li>
-                        <li><Link to={"/contacto"}>Contacto</Link></li>
                     </ul>
                 </div>
             </div>
