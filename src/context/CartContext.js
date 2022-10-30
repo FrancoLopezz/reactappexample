@@ -8,22 +8,22 @@ const CartProvider = ({children}) => {
 
     const [cart, setCart] = useState([]);
 
-    const addItem = (item, qty) => {
-        if (inCart(item.id)){ 
-            setCart(cart.map(product => {
-                return product.id === item.id ? { ...product, qty: product.qty + qty} : product
+    const addItem = (data, qty) => {
+        if (inCart(data.id)){ 
+            setCart(cart.map(item => {
+                return item.id === data.id ? { ...item, qty: item.qty + qty} : item
             }))
         }else {
-            setCart([...cart, {...item, qty}])
+            setCart([...cart, {...data, qty}])
         }
 
     } 
 
     const clearCart = () => setCart([]);
 
-    const inCart = (id) => cart.find(product => product.id === id) ? true : false ; 
+    const inCart = (id) => cart.find(item => item.id === id) ? true : false ; 
 
-    const removeItem = (id) => setCart(cart.filter(product => product.id !== id));
+    const removeItem = (id) => setCart(cart.filter(item => item.id !== id));
 
     const totalPrice = () => {
         return cart.reduce((prev, act) => prev + act.qty * act.price, 0);

@@ -18,7 +18,6 @@ const ItemListContainer = () => {
       }));
       
       setProducts(arrshoes);
-      console.log(arrshoes)
     });
   }, []);
   return (

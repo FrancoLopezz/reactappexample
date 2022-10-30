@@ -16,7 +16,7 @@ const Item = (props) => {
             <h2>{title}</h2>
 
             <p>${price}</p>
-            <p stock={stock} >{stock} disponibles!</p>
+            <p stock={stock} >{stock} Available!</p>
         </div>
     )
 }

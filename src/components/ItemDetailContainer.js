@@ -5,27 +5,20 @@ import ItemDetail from './ItemDetail';
 import Footer from './footer/Footer';
 
 const ItemDetailContainer = () => {
-    const db = getFirestore();
     const [datos, setDatos] = useState([])
     const {id} = useParams(); 
 
-    const getItem = async () => {
-      try {
-          const result = await getDoc(doc(db, "Dunk", id))
-          setDatos(result.data());
-      }catch(error){
-        alert('error')
-      }
-    }
-
-    useEffect(()=> {
-      getItem();
-    }, [datos]);
+    useEffect(() => {
+      const db = getFirestore();
+      const queryDoc = doc(db, 'Dunk', id);
+      getDoc(queryDoc)
+       .then(res => setDatos({id: res.id, ...res.data()}))
+    },[])
 
     return ( 
       <div>
 
-        <ItemDetail item={datos} id={id}></ItemDetail>
+        <ItemDetail data={datos} id={id}></ItemDetail>
 
         <Footer/>
         
