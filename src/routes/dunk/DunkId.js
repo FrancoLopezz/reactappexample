@@ -6,7 +6,7 @@ const DunkId = () => {
 
     return (
       <main>
-          <ShoesDetailContainer/>
+          <ShoesDetailContainer nombre='Dunk'/>
       </main>
   );
 };

@@ -5,12 +5,14 @@ import ItemList from './ItemList'
 import Footer from '../footer/Footer';
 
 
-const ItemListContainer = () => {
+const ItemListContainer = (category) => {
   const [products, setProducts] = useState([]);
   let {id} = useParams();
+
+
   useEffect(() => {
     const db = getFirestore();
-    const dunkCollection = collection(db, 'Dunk');
+    const dunkCollection = collection(db, category.nombre);
     getDocs(dunkCollection).then((snapshot) => {
       const arrshoes = snapshot.docs.map((document) => ({
         id: document.id,

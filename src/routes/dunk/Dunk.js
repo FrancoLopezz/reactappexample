@@ -6,7 +6,7 @@ const Dunk = () => {
 
   return (
     <main>
-      <ItemListContainer/>
+      <ItemListContainer nombre='Dunk'/>
     </main>
   );
 };
