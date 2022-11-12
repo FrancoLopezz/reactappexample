@@ -1,6 +1,6 @@
 import React from 'react';
 import ItemListContainer from '../../components/item/ItemListContainer';
-import './dunk.css';
+import '../dunk.css';
 
 const Dunk = () => {
 

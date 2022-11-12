@@ -1,12 +1,12 @@
 import React from 'react';
-import ComingSoon from '../../components/comingsoon/ComingSoon';
+import ItemListContainer from '../../components/item/ItemListContainer';
 
 
 const Jordan = () => {
 
   return (
     <main>
-      <ComingSoon/>
+      <ItemListContainer nombre='jordan'/>
     </main>
   );
 };

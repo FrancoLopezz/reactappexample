@@ -1,14 +1,13 @@
 import React from 'react';
 import ShoesDetailContainer from '../../components/ItemDetailContainer';
-import '../dunk.css';
 
-const DunkId = () => {
+const JordanId = () => {
 
     return (
       <main>
-          <ShoesDetailContainer nombre='Dunk'/>
+          <ShoesDetailContainer nombre='jordan'/>
       </main>
   );
 };
 
-export default DunkId;
+export default JordanId;

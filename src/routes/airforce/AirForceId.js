@@ -1,14 +1,14 @@
 import React from 'react';
 import ShoesDetailContainer from '../../components/ItemDetailContainer';
-import '../dunk.css';
 
-const DunkId = () => {
+
+const AirForceId = () => {
 
     return (
       <main>
-          <ShoesDetailContainer nombre='Dunk'/>
+          <ShoesDetailContainer nombre='airforce'/>
       </main>
   );
 };
 
-export default DunkId;
+export default AirForceId;

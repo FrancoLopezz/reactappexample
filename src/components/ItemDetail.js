@@ -37,7 +37,7 @@ const ItemDetail = ({data}) => {
           
           }
           <div>
-                <Link to={'/dunk'}>Back</Link>
+                <Link to={`/${data.type}`}>Back</Link>
           </div>
         </main>
 

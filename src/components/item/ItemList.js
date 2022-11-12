@@ -6,7 +6,7 @@ const ItemList = (props) => {
 
     return(
         <div>
-            {listaDeProductos.map((producto) => <Item id={producto.id} title={producto.title} price={producto.price} stock={producto.stock} key={producto.id} image={producto.image}></Item>)}
+            {listaDeProductos.map((producto) => <Item id={producto.id} title={producto.title} price={producto.price} stock={producto.stock} key={producto.id} image={producto.image} type={producto.type}></Item>)}
         </div>
     )
 }

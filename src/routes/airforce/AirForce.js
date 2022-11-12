@@ -1,11 +1,11 @@
 import React from 'react';
-import ComingSoon from '../../components/comingsoon/ComingSoon';
+import ItemListContainer from '../../components/item/ItemListContainer';
 
 const AirForce = () => {
 
   return (
     <main>
-      <ComingSoon/>
+      <ItemListContainer nombre='airforce'/>
     </main>
   );
 };
